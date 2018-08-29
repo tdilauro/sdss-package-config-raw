@@ -1,0 +1,33 @@
+#
+# Configuration for contents of
+# - /pnfs/sdss/db2/ImagingRaw
+#
+
+######################################################
+# The next parameters will be different for each bag #
+######################################################
+
+# Package Count - corresponds to <BAGCOUNT> in baginfoTemplate
+numberOfPkgs=1063
+
+# Inventory of files/directories
+invFile=/home/s1/timmo/.sdss-packaging/ImagingRaw-pkgInventory.csv
+
+# path relative to /pnfs/sdss/db2/
+relPath=ImagingRaw
+
+# corresponds to <BAG-GRP-ID> in baginfoTemplate
+bagGroupIdentifier='http://dataconservancy.org/ids/sdss:fnal:db2/ImagingRaw/?'
+
+# corresponds to <EXT-DESC> in baginfoTemplate
+bagExternalDescription='Raw imaging data from the SDSS and SDSS-II projects.'
+
+#####################################################################
+# The following parameters should not need to be changed very often #
+#####################################################################
+
+# template for bag-info.txt and some of the replacement parameters
+baginfoTemplate=/home/s1/timmo/projects/sdss/bagit/templates/bag-info.txt
+
+# corresponds to <BAG-SCHEME> in baginfoTemplate
+bagScheme=http://dataconservancy.org/schemes/profile/bagit/sdss-raw-bag
